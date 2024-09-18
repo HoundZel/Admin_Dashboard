@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template: 17vh 83vh / 21vw 18vw 18vw 18vw 25vw;
+    background-color: lightblue; 
+}
+.container div{
+    border: 2px solid red;
+    font-size: 1.2em;
+    text-align: center;
+}
+#navbar{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+#header{
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+#projects{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+#more{
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+#announcements{
+    display: flex;
+    flex-direction: column;
+}
+#trending{
+    display: flex;
+    flex-direction: column;
+}
+
+li{
+    text-align: left;
+}

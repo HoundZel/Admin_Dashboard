@@ -6,11 +6,11 @@ body{
 
 .container{
     display: grid;
-    grid-template: 17vh 83vh / 21vw 18vw 18vw 18vw 25vw;
-    background-color: lightblue; 
+    grid-template: 17vh 83vh / 21vw 20vw 20vw 20vw 19vw;
+    background-color: #E2E8F0; 
 }
 .container div{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     font-size: 1.2em;
     text-align: center;
 }
@@ -19,12 +19,29 @@ body{
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 3;
+    background-color: #1992D4;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#logo{
+    margin:20px 0px 0px 0px;
+    text-align: center;
+    height: 5vh;
+}
+#pages{
+    margin:0px 0px 0px 25px;
+    text-align: left;
+}
+#settings{
+    margin:0px 0px 0px 25px;
+    text-align: left;
 }
 #header{
     grid-column-start: 2;
     grid-column-end: 6;
     grid-row-start: 1;
     grid-row-end: 2;
+    background-color: white;
 }
 #projects{
     grid-column-start: 2;
@@ -46,7 +63,196 @@ body{
     display: flex;
     flex-direction: column;
 }
-
-li{
+.top{
     text-align: left;
+    margin: 20px 20px 0px 10px;
+}
+.bottom{
+    border: 1px solid black;
+    background-color: white; 
+    padding: 10px;
+    margin: 0px 10px 0px 10px;
+    border-radius: 15px;
+}
+.bottom p{
+    height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* white-space: nowrap;  */
+    padding: 10px; 
+    font-size: 0.5em;
+    text-align: left;
+}
+
+.bottom div{
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+}
+
+.bottom div div{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    font-size: 0.4em;
+}
+
+#search{
+    height: 49%;
+    grid-template: 10% 78% 10% / 5% 70% 5% 20%;
+    display: grid;
+}
+#search_icon{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: right;
+    align-self: center;
+}
+#bar{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: center;
+    align-self: center;
+    border-radius: 15px;
+    background-color: #E2E8F0;
+    padding: 5px;
+    width: 85%;
+    height: 70%;
+}
+#bell{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: center;
+    align-self: center;
+}
+#user{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+}
+#greetings{
+    height: 49%;
+    grid-template: 100% / 5% 5% 25% 35% 10% 10% 10% ;
+    display: grid;
+}
+#user_pic{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 90%;
+    width: auto;
+    border: 2px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+    background-image: url('test.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#user_greet{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    font-size: 0.8em;
+    margin: 5px 20px 10px 20px;
+}
+#new{
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1em;
+    margin: 20px;
+    border-radius: 10%;
+    border: 1px solid black;
+    background-color: #1992D4;
+    color: white;
+}
+#upload{
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1em;
+    margin: 20px;
+    border-radius: 10%;
+    border: 1px solid black;
+    background-color: #1992D4;
+    color: white;
+}
+#share{
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1em;
+    margin: 20px;
+    border-radius: 10%;
+    border: 1px solid black;
+    background-color: #1992D4;
+    color: white;
+}
+#name{
+    margin-top: 0px;
+    font-size: 1em;
+}
+#projects{
+    display: flex;
+    flex-direction: column;
+}
+#my_projects{
+    font-weight: bold;
+    text-align: left;
+    margin: 2.5%;
+}
+#gem{
+    /* border: 2px solid red; */
+    display: grid;
+    height: 100%;
+    margin: 0% 2.5% 2.5% 2.5%;
+    resize: both;
+    overflow: auto;
+    gap: 4px;
+    padding: 4px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.card{
+    background-color: white;
+    border-radius: 20px;
+    border:1px solid gray;
+    text-align: left;
+    color: #ddd;
+    font-family: sans-serif;
+    color: black;
+    font-size: 0.7rem;
+    padding: 12px;
+    margin: 0% 2.5% 2.5% 2.5%;
 }
